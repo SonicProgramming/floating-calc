@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPane" maxHeight="510.0" maxWidth="420.0" prefHeight="510.0" prefWidth="420.0" scaleShape="false" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pkg3d.control.MainWindowController">
+    <stylesheets>
+        <URL value="@mainwindow.css" />
+    </stylesheets>
+    <children>
+        <PerspectiveCamera fx:id="sceneCamera" translateZ="-500.0" />
+        <Pane fx:id="internalPane" layoutX="14.0" layoutY="14.0" maxHeight="495.0" maxWidth="405.0" prefHeight="495.0" prefWidth="405.0" scaleShape="false" style="-fx-background-color: #7f7f7f;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <TextArea fx:id="calcTextArea" layoutX="16.0" layoutY="14.0" prefHeight="200.0" prefWidth="358.0">
+                    <font>
+                        <Font name="Consolas" size="18.0" />
+                    </font>
+                </TextArea>
+                <Button fx:id="oneBtn" layoutX="16.0" layoutY="234.0" mnemonicParsing="false" onAction="#oneBtnActionPerformed" prefHeight="50.0" prefWidth="52.0" text="1" />
+                <Button fx:id="twoBtn" layoutX="77.0" layoutY="234.0" mnemonicParsing="false" onAction="#twoBtnActionPerformed" prefHeight="50.0" prefWidth="52.0" text="2" />
+                <Button fx:id="threeBtn" layoutX="139.0" layoutY="234.0" mnemonicParsing="false" onAction="#threeBtnActionPerformed" prefHeight="50.0" prefWidth="52.0" text="3" />
+                <Button fx:id="fourBtn" layoutX="16.0" layoutY="294.0" mnemonicParsing="false" onAction="#fourBtnActionPerformed" prefHeight="50.0" prefWidth="52.0" text="4" />
+                <Button fx:id="fiveBtn" layoutX="77.0" layoutY="294.0" mnemonicParsing="false" onAction="#fiveBtnActionPerformed" prefHeight="50.0" prefWidth="52.0" text="5" />
+                <Button fx:id="sixBtn" layoutX="139.0" layoutY="294.0" mnemonicParsing="false" onAction="#sixBtnActionPerformed" prefHeight="50.0" prefWidth="52.0" text="6" />
+                <Button fx:id="sevenBtn" layoutX="16.0" layoutY="353.0" mnemonicParsing="false" onAction="#sevenBtnActionPerformed" prefHeight="50.0" prefWidth="52.0" text="7" />
+                <Button fx:id="eightBtn" layoutX="77.0" layoutY="353.0" mnemonicParsing="false" onAction="#eightBtnActionPerformed" prefHeight="50.0" prefWidth="52.0" text="8" />
+                <Button fx:id="nineBtn" layoutX="139.0" layoutY="353.0" mnemonicParsing="false" onAction="#nineBtnActionPerformed"  prefHeight="50.0" prefWidth="52.0" text="9" />
+                <Button fx:id="zeroBtn" layoutX="77.0" layoutY="414.0" mnemonicParsing="false" onAction="#zeroBtnActionPerformed" prefHeight="50.0" prefWidth="52.0" text="0" />
+                <Button fx:id="dotBtn" layoutX="16.0" layoutY="414.0" mnemonicParsing="false" onAction="#dotBtnActionPerformed" prefHeight="50.0" prefWidth="52.0" text="." />
+                <Button fx:id="actionBtn" layoutX="139.0" layoutY="414.0" mnemonicParsing="false" onAction="#actionBtnActionPerformed" prefHeight="50.0" prefWidth="52.0" text="=" />
+                <Button fx:id="addBtn" layoutX="200.0" layoutY="234.0" mnemonicParsing="false" onAction="#addBtnActionPerformed" prefHeight="50.0" prefWidth="52.0" text="+" />
+                <Button fx:id="subBtn" layoutX="200.0" layoutY="294.0" mnemonicParsing="false" onAction="#subBtnActionPerformed" prefHeight="50.0" prefWidth="52.0" text="-" />
+                <Button fx:id="mulBtn" layoutX="200.0" layoutY="353.0" mnemonicParsing="false" onAction="#mulBtnActionPerformed" prefHeight="50.0" prefWidth="52.0" text="*" />
+                <Button fx:id="divBtn" layoutX="200.0" layoutY="414.0" mnemonicParsing="false" onAction="#divBtnActionPerformed" prefHeight="50.0" prefWidth="52.0" text="/" />
+                <Button fx:id="powBtn" layoutX="261.0" layoutY="234.0" mnemonicParsing="false" onAction="#powBtnActionPerformed" prefHeight="50.0" prefWidth="52.0" text="x^y" />
+                <Button fx:id="rootBtn" layoutX="261.0" layoutY="294.0" mnemonicParsing="false" onAction="#rootBtnActionPerformed" prefHeight="50.0" prefWidth="52.0" text="√x" />
+                <Button fx:id="cubeRootBtn" layoutX="261.0" layoutY="353.0" mnemonicParsing="false" onAction="#cubeRootBtnActionPerformed" prefHeight="50.0" prefWidth="52.0" text="3√x" />
+                <Button fx:id="quadRootBtn" layoutX="261.0" layoutY="414.0" mnemonicParsing="false" onAction="#quadRootBtnActionPerformed" prefHeight="50.0" prefWidth="52.0" text="4√x" />
+                <Button fx:id="sinBtn" layoutX="321.0" layoutY="234.0" mnemonicParsing="false" onAction="#sinBtnActionPerformed" prefHeight="50.0" prefWidth="52.0" text="sin(x)" />
+                <Button fx:id="cosBtn" layoutX="321.0" layoutY="294.0" mnemonicParsing="false" onAction="#cosBtnActionPerformed" prefHeight="50.0" prefWidth="52.0" text="cos(y)" />
+                <Button fx:id="tgBtn" layoutX="321.0" layoutY="353.0" mnemonicParsing="false" onAction="#tgBtnActionPerformed" prefHeight="50.0" prefWidth="52.0" text="tg(x)" />
+                <Button fx:id="ctgBtn" layoutX="321.0" layoutY="414.0" mnemonicParsing="false" onAction="#ctgBtnActionPerformed" prefHeight="50.0" prefWidth="52.0" text="ctg(x)" />
+            </children>
+            <padding>
+                <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+            </padding>
+        </Pane>
+    </children>
+    <padding>
+        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+    </padding>
+</AnchorPane>
